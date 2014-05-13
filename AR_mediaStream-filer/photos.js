@@ -1,4 +1,5 @@
 Photos = [
 "boobs.jpg",
-"boob.jpg"
+"boob.jpg",
+"boobies.png"
 ];

@@ -75,8 +75,8 @@ getUserMedia({'video': true},
 
     var glCanvas = document.createElement('canvas');
     glCanvas.style.webkitTransform = 'scale(-1.0, 1.0)';
-    glCanvas.width = 960;
-    glCanvas.height = 720;
+    glCanvas.width = 1440;
+    glCanvas.height = 900;
     var s = glCanvas.style;
     document.body.appendChild(glCanvas);
     display = new Magi.Scene(glCanvas);
@@ -150,7 +150,7 @@ getUserMedia({'video': true},
       }
       for (var i in pastResults) {
         var r = pastResults[i];
-        if (r.age > 1) {
+        if (r.age > 3) {
           delete pastResults[i];
           cubes[i].image.setImage(photos.rotate());
         }

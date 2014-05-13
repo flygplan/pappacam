@@ -80,7 +80,7 @@ getUserMedia({'video': true},
     var s = glCanvas.style;
     document.body.appendChild(glCanvas);
     display = new Magi.Scene(glCanvas);
-    display.drawOnlyWhenChanged = true;
+    display.drawOnlyWhenChanged = false;
     param.copyCameraMatrix(display.camera.perspectiveMatrix, 10, 10000);
     display.camera.useProjectionMatrix = true;
     var videoTex = new Magi.FlipFilterQuad();

@@ -75,8 +75,8 @@ getUserMedia({'video': true},
 
     var glCanvas = document.createElement('canvas');
     glCanvas.style.webkitTransform = 'scale(-1.0, 1.0)';
-    glCanvas.width = 1440;
-    glCanvas.height = 900;
+    glCanvas.width = 960;
+    glCanvas.height = 720;
     var s = glCanvas.style;
     document.body.appendChild(glCanvas);
     display = new Magi.Scene(glCanvas);
@@ -244,20 +244,8 @@ getUserMedia({'video': true},
 
 </head>
 <body>
+<video controls loop>
+    <source src=test.WebM type=video/mp4>
+</video>
 <div style="display: none;" id="loading">Hang on, I'm loading stuff...</div>
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-1485935-6']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-
-
-<video src="mediastream:49bfc824-344d-4e84-830f-c3a1f6ab5688" controls="controls" style="display: none;" autoplay="autoplay" loop="" height="480" width="640"></video><canvas height="720" width="960"></canvas></body></html>
+</body></html>

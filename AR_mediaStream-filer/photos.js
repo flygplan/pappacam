@@ -1,4 +1,5 @@
 Photos = [
 "nike.jpg",
-"adidas.jpg"
+"nike copy.jpg"
+//"adidas.jpg"
 ];
